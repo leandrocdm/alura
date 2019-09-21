@@ -1,7 +1,7 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/lecoeme/ni/ide/Photon/eclipse/
-org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Users/lecoeme/ni/jdk/jdk1.8.0_121_x64/jre/lib/rt.jar
-org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Users/lecoeme/ni/jdk/jdk1.8.0_121_x64/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/lecoeme/ni/ide/Photon/eclipse/plugins/org.junit_4.12.0.v201504281640/
 org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/lecoeme/.m2/repository
