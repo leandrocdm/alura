@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+C:\Users\lecoeme\Documents\Alura\Java parte 2 - Introdução à Orientação a Objetos\projetos\.metadata\.plugins\org.eclipse.jdt.core
+2207395684.index
+1410451617.index
+2063340913.index
+470196629.index
+69414484.index
+3543925795.index
+2651552692.index
+1598043628.index
+3600077589.index
+713337637.index
+2095161403.index
+852482488.index
+1011848841.index
+147778558.index
+173539348.index
+1695164235.index
+157459820.index
+2229283781.index
+3122572646.index

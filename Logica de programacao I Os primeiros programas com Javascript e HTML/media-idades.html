@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<h1> Calculo de media de idades </h1>
+
+<script>
+
+function texto(msg){
+  document.write(msg);
+  pularLinha();
+}
+
+function pularLinha(){
+  document.write("<br>");
+}
+
+function perguntaQtdIdade(){
+  return parseInt(prompt("Quantidade de idades"));
+}
+
+function perguntaIdade(nrIdade){
+  return parseInt(prompt("Digite a idade nr "+ nrIdade));
+}
+
+var qtdIdades = perguntaQtdIdade();
+var totalIdades = 0;
+var contador = 0;
+
+for(var i = 1; i <= this.qtdIdades; i++){
+  this.totalIdades += perguntaIdade(i);
+  contador++;
+}
+
+texto("A media é: " + this.totalIdades/this.contador);
+
+</script>

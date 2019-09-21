@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<h1> Validar se teve copa </h1>
+
+<script>
+
+function texto(msg){
+  document.write(msg);
+  pularLinha();
+}
+
+function pularLinha(){
+  document.write("<br>");
+}
+
+function solicitarAno(){
+  return parseInt(prompt("Digite um ano"));
+}
+
+var anoMinimoCopa = 1930;
+var anoAtual = 2019;
+var validador = false;
+
+var ano = solicitarAno();
+
+while(validador == false){
+  if(this.ano < 1930 || this.ano > this.anoAtual){
+    alert("Digite um ano entre 1930 e "+ this.anoAtual);
+    this.ano = solicitarAno();
+    this.validador = false;
+  }else {
+    this.validador = true;
+  }
+}
+
+while(this.anoMinimoCopa <= this.ano){
+  texto("Teve copa em " + this.anoMinimoCopa);
+  this.anoMinimoCopa = this.anoMinimoCopa + 4;
+}
+
+</script>

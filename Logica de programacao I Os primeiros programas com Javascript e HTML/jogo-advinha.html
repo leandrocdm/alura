@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<h1>Jogo advinha numero!</h1>
+
+<script>
+
+function pularLinha(){
+  document.write("<br>");
+}
+
+function texto(msg){
+  document.write(msg);
+  pularLinha();
+}
+
+function scanNumero(){
+  return prompt("Digite um numero");
+}
+
+var numeroSorteado = Math.round(Math.random()*3);
+var numeroDigitado = scanNumero();
+
+texto("numero digitado: " + numeroDigitado);
+texto("numero sorteado: " + numeroSorteado);
+
+if(numeroDigitado == null){
+  alert("Digita um numero ai tio!");
+  exit();
+}else if (numeroDigitado == ""){
+  alert("Digita um numero ai tio!");
+  exit();
+}
+
+if(numeroSorteado == numeroDigitado){
+  alert("voce acertou!");
+  exit();
+} else if (numeroSorteado == (parseInt(numeroDigitado) - 1)) {
+  alert("voce errou por um numero pra baixo!");
+} else if (numeroSorteado == (parseInt(numeroDigitado) + 1)) {
+  alert("voce errou por um numero pra cima!");
+} else {
+  alert("voce errou feio parça!");
+}
+
+</script>

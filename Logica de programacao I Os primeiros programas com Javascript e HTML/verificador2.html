@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+
+<h1> Verificador versao2 2 </h1>
+<br>
+<input/>
+
+<div>
+  <label id="str"></label>
+</div>
+
+<button onclick="valida(str)">Validar</button>
+
+<script>
+
+function pularLinha(){
+  texto("<br>");
+}
+
+function texto(msg){
+  document.write(msg);
+}
+
+function limpaEFoca(input){
+  input.value = "";
+  input.focus();
+}
+
+var input = document.querySelector("input");
+input.focus();
+
+var segredos = [];
+segredos.push(Math.round(Math.random() * 10));
+segredos.push(Math.round(Math.random() * 10));
+segredos.push(Math.round(Math.random() * 10));
+console.log(segredos);
+
+var validador = false;
+
+function valida(str){
+  var validador = false;
+  for(var i = 0; i < segredos.length; i++){
+    if(input.value == segredos[i]){
+      alert("acertou");
+      validador = true;
+      break;
+    }
+  }
+  if(validador == false){
+    alert("errou");
+    limpaEFoca(input);
+  }
+}
+</script>
