@@ -7,9 +7,12 @@ public class TesteTributaveis {
 		
 		SeguroDeVida seguro = new SeguroDeVida();
 		
+		ContaPoupanca cp = new ContaPoupanca(1231, 123);
+		
 		CalculadorDeImposto calc = new CalculadorDeImposto();
 		calc.registra(cc);
 		calc.registra(seguro);
+		//calc.registra(cp);
 		
 		System.out.println(calc.getTotalImposto());
 
