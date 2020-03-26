@@ -1,11 +1,8 @@
-import java.util.List;
-
 public class Fornecedor {
 	
 	private int id;
 	private String nome;
 	private String cnpj;
-	private List<Pedido> pedidos;
 	
 	public int getId() {
 		return id;
@@ -25,11 +22,4 @@ public class Fornecedor {
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
-	public List<Pedido> getPedidos() {
-		return pedidos;
-	}
-	public void setPedidos(List<Pedido> pedidos) {
-		this.pedidos = pedidos;
-	}
-
 }

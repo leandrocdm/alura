@@ -1,17 +1,14 @@
-import java.util.List;
-
 public class Cliente {
 	
-	private int id;
+	private static int id = 1;
 	private String nome;
 	private String cpf;
-	private List<Pedido> pedidos;
 	
+	public Cliente() {
+		id++;
+	}
 	public int getId() {
 		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getNome() {
 		return nome;
@@ -25,11 +22,4 @@ public class Cliente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public List<Pedido> getPedidos() {
-		return pedidos;
-	}
-	public void setPedidos(List<Pedido> pedidos) {
-		this.pedidos = pedidos;
-	}
-	
 }

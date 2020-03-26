@@ -1,5 +1,5 @@
-
 public class NotaFiscal {
+	
 	private int id;
 	private String cpfOuCnpj;
 	private Pedido pedido;
@@ -22,6 +22,4 @@ public class NotaFiscal {
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
 	}
-	
-
 }

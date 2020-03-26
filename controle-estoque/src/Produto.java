@@ -1,10 +1,18 @@
-
 public class Produto {
 	
+	private static int id = 1;
 	private String nome;
 	private int preco;
 	private int desconto;
 	
+	public Produto() {
+		id++;
+	}
+
+	public int getId() {
+		return id;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -26,5 +34,4 @@ public class Produto {
 	public int valorTotalProduto(int qtd, int preco, int desconto) {
 		return (preco * qtd) - desconto; 
 	}
-
 }

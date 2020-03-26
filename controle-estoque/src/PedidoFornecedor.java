@@ -2,10 +2,18 @@ import java.util.List;
 
 public class PedidoFornecedor extends Pedido implements GerarNotaFiscal{
 	
+	private static int numero = 1000;
 	private Fornecedor fornecedor;
 	private List<Produto> produtos;
 	private NotaFiscal notaFiscal;
 	
+	public PedidoFornecedor() {
+		numero++;
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
 	public Fornecedor getFornecedor() {
 		return fornecedor;
 	}
