@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.List;
 
 public class PedidoCliente extends Pedido implements GerarNotaFiscal{
@@ -25,8 +26,28 @@ public class PedidoCliente extends Pedido implements GerarNotaFiscal{
 		this.notaFiscal = notaFiscal;
 	}
 	@Override
-	public void enviarCpfOuCnpj() {
+	public void enviarCpfOuCnpj(String cpf) {
 		this.notaFiscal.setCpfOuCnpj(this.cliente.getCpf());
+		
+	}
+	@Override
+	public Date getDtPedido() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setDtPedido(Date dtPedido) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public int getNumero() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public void setNumero(int numero) {
+		// TODO Auto-generated method stub
 		
 	}
 }

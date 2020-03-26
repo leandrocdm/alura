@@ -10,6 +10,9 @@ public class BancoDeDados {
 	List<PedidoFornecedor> pedidosFornecedores;
 	List<PedidoCliente> pedidosClientes;
 	
+	public BancoDeDados() {};
+	
+	
 	public List<Produto> getProdutos() {
 		return produtos;
 	}

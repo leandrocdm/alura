@@ -1,14 +1,14 @@
-public class NotaFiscal {
+public class NotaFiscal implements GerarNotaFiscal {
 	
-	private int id;
+	private static int id = 1;
 	private String cpfOuCnpj;
 	private Pedido pedido;
 	
+	public NotaFiscal() {
+		id++;
+	}
 	public int getId() {
 		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getCpfOuCnpj() {
 		return cpfOuCnpj;
@@ -21,5 +21,10 @@ public class NotaFiscal {
 	}
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
+	}
+	@Override
+	public void enviarCpfOuCnpj(String cpfOuCnpj) {
+		this.cpfOuCnpj = cpfOuCnpj;
+		
 	}
 }

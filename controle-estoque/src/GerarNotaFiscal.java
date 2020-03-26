@@ -1,5 +1,5 @@
 public interface GerarNotaFiscal {
 	
-	void enviarCpfOuCnpj();
+	void enviarCpfOuCnpj(String cpfOuCnpj);
 
 }
