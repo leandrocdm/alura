@@ -5,15 +5,23 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		@SuppressWarnings("resource")
-		Scanner scan = new Scanner(System.in);
-
-		System.out.println("digite a qtd de produtos");
-		int qtdProd = scan.nextInt();
-
-		ArrayList<Produto> listaProdutos = new ArrayList<>();
-		int q = 1;
+//		@SuppressWarnings("resource")
+//		Scanner scan = new Scanner(System.in);
+//
+//		System.out.println("digite a qtd de produtos");
+//		int qtdProd = scan.nextInt();
+//
+//		ArrayList<Produto> listaProdutos = new ArrayList<>();
+//		int q = 1;
 		
+//		
+//		Object ob = new Object();
+//		
+//		System.out.println(ob);
+		
+		Produto p = new Produto();
+		
+		System.out.println(p);
 
 //		for (int i = 0; i < qtdProd; i++) {
 //			Produto prod = new Produto();
